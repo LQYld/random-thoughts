@@ -46,7 +46,7 @@ export default defineConfig({
       async markdownItSetup(md) {
         md.use(await MarkdownItShikiji({
           themes: {
-            dark: 'vitesse-light',
+            dark: 'vitesse-dark',
             light: 'vitesse-light',
           },
         }))
@@ -63,7 +63,7 @@ export default defineConfig({
         md.use(TOC, {
           includeLevel: [1, 2, 3, 4],
           slugify,
-          containerHeaderHtml: '<div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill" /></div>',
+          containerHeaderHtml: '<div class="table-of-contents-anchor"><div class="i-ri-menu-2-fill dark:text-white" /></div>',
         })
       },
      }),
