@@ -15,7 +15,7 @@
       <div class="spacer" />
       <div class="right" print:op0>
         <RouterLink to="/posts" title="Blog">
-          <span class="lt-md:hidden cursor-pointer">Blog</span>
+          <a class="lt-md:hidden cursor-pointer">Blog</a>
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
         <ToggleTheme />
@@ -58,6 +58,10 @@
   transition: opacity 0.2s ease;
   opacity: 0.6;
   outline: none;
+}
+
+a:after {
+  background-color: transparent !important;
 }
 
 .nav a:hover {
