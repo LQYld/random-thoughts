@@ -9,6 +9,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import AutoImport from 'unplugin-auto-import/vite'
+import { rendererRich, transformerTwoSlash } from 'shikiji-twoslash'
 import { slugify } from './scripts/slugify'
 import Unocss from 'unocss/vite'
 
@@ -49,6 +50,12 @@ export default defineConfig({
             dark: 'vitesse-dark',
             light: 'vitesse-light',
           },
+          transformers: [
+            transformerTwoSlash({
+              explicitTrigger: true,
+              renderer: rendererRich(),
+            }),
+          ],
         }))
         md.use(anchor, {
           slugify,

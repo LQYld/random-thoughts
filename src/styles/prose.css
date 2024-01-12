@@ -39,6 +39,6 @@ body {
 }
 
 .prose .shiki {
-  background-color: #fafafa !important;
+  background-color: var(--shiki-bg) !important;
   border-radius: 8px;
 }

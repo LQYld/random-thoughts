@@ -23,6 +23,7 @@ html.dark {
   --enter-step: 90ms;
   --enter-initial: 0ms;
   --primary: rgba(253, 120, 151, 0.4);
+  --shiki-bg: #fafafa;
 }
 
 html {
@@ -37,6 +38,7 @@ html {
   --c-scrollbar-hover: #222;
   --c-text: #ddd;
   --primary: rgba(253, 120, 151, 0.5);
+  --shiki-bg: #0e0e0e;
 }
 
 @keyframes slide-enter {
