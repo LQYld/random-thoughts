@@ -36,6 +36,7 @@ html {
   --c-scrollbar: #111;
   --c-scrollbar-hover: #222;
   --c-text: #ddd;
+  --primary: rgba(253, 120, 151, 0.5);
 }
 
 @keyframes slide-enter {
