@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
@@ -8,7 +9,7 @@
       to="/"
       focusable="false"
     >
-      <img w-7 mr-4 src="/public/quill.png"/>
+      <img w-9 dark:bg-white p-2 mr-3 rounded-2 src="/quill.png"/>
       <p class="dark:text-white">Random thoughts</p>
     </RouterLink>
     <nav class="nav">

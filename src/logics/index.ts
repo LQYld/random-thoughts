@@ -1,6 +1,4 @@
 import dayjs from 'dayjs'
-import {nextTick} from 'vue';
-import {useDark,useStorage} from '@vueuse/core'
 
 export const isDark = useDark()
 export const englishOnly = useStorage('antfu-english-only', false)
