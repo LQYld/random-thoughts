@@ -8,11 +8,19 @@ import dayjs from 'dayjs'
 import FloatingVue from 'floating-vue'
 import { setupRouterScroller } from 'vue-router-better-scroller'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat.js'
+import autoRoutes from 'pages-generated'
 import './styles/main.css'
 import 'uno.css'
 
-//@ts-ignore
-import routes from '~pages'
+const routes = autoRoutes.map((i) => {
+  return {
+    ...i,
+    alias: i.path.endsWith('/')
+      ? `${i.path}index.html`
+      : `${i.path}.html`,
+  }
+})
+
 
 export const createApp = ViteSSG(
   App,
