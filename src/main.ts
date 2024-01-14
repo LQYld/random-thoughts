@@ -14,15 +14,6 @@ import 'uno.css'
 //@ts-ignore
 import routes from '~pages'
 
-// const router = createRouter({
-//   history: createWebHistory(),  
-//   routes,
-// })
-
-// router.addRoute({ path: '/:catchAll(.*)', redirect: '/404', meta: { name: 'notfound' } })
-
-// createApp(App).use(router).mount('#app')
-
 export const createApp = ViteSSG(
   App,
   {
