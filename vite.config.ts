@@ -43,6 +43,7 @@ export default  defineConfig({
         'vue',
         'vue-router',
         '@vueuse/core',
+        '@vueuse/head'
       ],
     }),
     Components({
@@ -63,9 +64,12 @@ export default  defineConfig({
       defaultStyle: 'vertical-align: sub;',
     }),
     Markdown({
-      wrapperClasses: 'm-auto prose',
       wrapperComponent: 'WrapperPost',
+      wrapperClasses: 'prose m-auto',
       headEnabled: true,
+      exportFrontmatter: false,
+      exposeFrontmatter: false,
+      exposeExcerpt: false,
       markdownItSetup: async (md) => {
         md.use(await MarkdownItShikiji({
           themes: {
