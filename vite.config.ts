@@ -12,6 +12,8 @@ import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import AutoImport from 'unplugin-auto-import/vite'
 import { rendererRich, transformerTwoSlash } from 'shikiji-twoslash'
+import fs from 'fs-extra'
+import matter from 'gray-matter'
 import { slugify } from './scripts/slugify'
 import Unocss from 'unocss/vite'
 
@@ -56,6 +58,18 @@ export default  defineConfig({
     }),
     Pages({
       extensions: ['vue', 'md'],
+      dirs: 'docs',
+      extendRoute(route) {
+        const path = resolve(__dirname, route.component.slice(1))
+
+        if (path.endsWith('.md')) {
+          const md = fs.readFileSync(path, 'utf-8')
+          const { data } = matter(md)
+          route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+        }
+
+        return route
+      },
     }),
     Icons({
       defaultClass: 'inline',
