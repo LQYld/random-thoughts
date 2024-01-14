@@ -1,4 +1,4 @@
-<!-- **[antfu.me](https://antfu.me)** -->
+**[random-thoughts](random-thoughts.fe-ecosphere.com)**
 
 我的随想记录.
 

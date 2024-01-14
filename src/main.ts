@@ -5,19 +5,6 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
-// import { createRouter, createWebHistory } from 'vue-router' 
-  
-// const routes = [  
-//   { path: '/', component: HomeComponent },  
-//   { path: '/about', component: HomeComponent },  
-//   // 其他路由规则...  
-// ]  
-
-// const router = createRouter({  
-//   history: createWebHistory(),  
-//   routes,  
-// })  
-
 //@ts-ignore
 import routes from '~pages'
 
