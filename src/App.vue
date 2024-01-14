@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar.vue'
 import {onMounted} from 'vue'
 import {useEventListener,useWindowScroll} from '@vueuse/core'
+import { ViteSSG } from 'vite-ssg'
 
 onMounted(() => {
   const navigate = () => {
