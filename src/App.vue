@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue'
-
-const route = useRoute()
+import {onMounted} from 'vue'
+import {useEventListener,useWindowScroll} from '@vueuse/core'
 
 onMounted(() => {
   const navigate = () => {

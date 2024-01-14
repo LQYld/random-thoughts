@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import {useRoute} from 'vue-router'
 const route = useRoute()
 
-import { formatDate } from '~/logics'
+import { formatDate } from '../logics'
 
 const { frontmatter } = defineProps({
   frontmatter: {

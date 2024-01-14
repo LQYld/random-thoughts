@@ -18,6 +18,7 @@ import 'uno.css'
 //   routes,  
 // })  
 
+//@ts-ignore
 import routes from '~pages'
 
 const router = createRouter({
