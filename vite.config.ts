@@ -11,10 +11,8 @@ import IconsResolver from 'unplugin-icons/resolver'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
 import AutoImport from 'unplugin-auto-import/vite'
-import matter from 'gray-matter'
 import { rendererRich, transformerTwoSlash } from 'shikiji-twoslash'
 import { slugify } from './scripts/slugify'
-import fs from 'fs-extra'
 import Unocss from 'unocss/vite'
 
 // https://vitejs.dev/config/

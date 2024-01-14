@@ -1,6 +1,4 @@
-import { createApp } from 'vue'
 import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router'
 import { ViteSSG } from 'vite-ssg'
 import '@unocss/reset/tailwind.css'
 import NProgress from 'nprogress'
