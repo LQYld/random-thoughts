@@ -19,6 +19,7 @@ const routes = autoRoutes.map((i) => {
   }
 })
 
+console.log(routes,'routes111')
 
 export const createApp = ViteSSG(
   App,
