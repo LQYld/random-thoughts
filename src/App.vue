@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue'
-import {onMounted} from 'vue'
-import {useEventListener,useWindowScroll} from '@vueuse/core'
+import { onMounted } from 'vue'
+import { useEventListener, useWindowScroll } from '@vueuse/core'
 
 onMounted(() => {
   const navigate = () => {
@@ -31,9 +31,11 @@ function toTop() {
 
 <template>
   <NavBar />
-  <div class="container">
+  <div>
     <div i-ri-menu-2-fill hidden />
-    <RouterView />
+    <main class="px-7 py-10 of-x-hidden">
+      <RouterView />
+    </main>
     <button title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
       duration-300 z-100 print:hidden :class="scroll > 300 ? 'op30' : 'op0! pointer-events-none'" @click="toTop()">
       <div i-ri-arrow-up-line dark:text-white />
@@ -42,7 +44,4 @@ function toTop() {
 </template>
 
 <style scoped>
-.container {
-  padding: 5vh 10vw !important;
-}
 </style>

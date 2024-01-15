@@ -77,7 +77,7 @@ export default  defineConfig({
     }),
     Markdown({
       wrapperComponent: 'WrapperPost',
-      wrapperClasses: 'prose m-auto',
+      wrapperClasses: 'prose m-auto slide-enter-content',
       headEnabled: true,
       exportFrontmatter: false,
       exposeFrontmatter: false,

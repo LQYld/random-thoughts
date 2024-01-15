@@ -1,13 +1,10 @@
 import App from './App.vue'
 import { ViteSSG } from 'vite-ssg'
 import '@unocss/reset/tailwind.css'
-// import NProgress from 'nprogress'
-// import dayjs from 'dayjs'
-// import FloatingVue from 'floating-vue'
-// import { setupRouterScroller } from 'vue-router-better-scroller'
-// import LocalizedFormat from 'dayjs/plugin/localizedFormat.js'
-import autoRoutes from 'pages-generated'
 import './styles/main.css'
+import './styles/prose.css'
+import './styles/markdown.css'
+import autoRoutes from 'pages-generated'
 import 'uno.css'
 
 const routes = autoRoutes.map((i) => {

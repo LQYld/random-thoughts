@@ -1,18 +1,12 @@
-import {
-  defineConfig,
-  presetAttributify,
-  presetIcons,
-  presetTypography,
-  presetUno,
-  presetWebFonts,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno, presetWebFonts, transformerDirectives } from 'unocss'
 
 export default defineConfig({
   shortcuts: [
-    ['btn', 'px-4 py-1 rounded inline-block bg-teal-700 text-white cursor-pointer !outline-none hover:bg-teal-800 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
-    ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
+    {
+      'bg-base': 'bg-white dark:bg-black',
+      'border-base': 'border-[#8884]',
+    },
+    [/^btn-(\w+)$/, ([_, color]) => `op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border border-base! rounded`],
   ],
   rules: [
     [/^slide-enter-(\d+)$/, ([_, n]) => ({
@@ -20,8 +14,6 @@ export default defineConfig({
     })],
   ],
   presets: [
-    presetUno(),
-    presetAttributify(),
     presetIcons({
       extraProperties: {
         'display': 'inline-block',
@@ -30,18 +22,19 @@ export default defineConfig({
         'vertical-align': 'text-bottom',
       },
     }),
-    presetTypography(),
+    presetAttributify(),
+    presetUno(),
     presetWebFonts({
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: 'Inter:400,600,800',
+        mono: 'DM Mono:400,600',
       },
     }),
   ],
   transformers: [
     transformerDirectives(),
-    transformerVariantGroup(),
   ],
-  safelist: 'prose m-auto text-left'.split(' '),
+  safelist: [
+    'i-ri-menu-2-fill',
+  ],
 })

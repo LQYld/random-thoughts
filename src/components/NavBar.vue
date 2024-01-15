@@ -9,14 +9,17 @@
       to="/"
       focusable="false"
     >
-      <img w-9 dark:bg-white p-2 mr-3 rounded-2 src="/quill.png"/>
-      <p class="dark:text-white">Random thoughts</p>
+      <img w-10 dark:bg-white p-2 mr-3 rounded-2 src="/quill.png"/>
     </RouterLink>
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/posts" title="Blog">
-          <a class="lt-md:hidden cursor-pointer">Blog</a>
+        <RouterLink to="/posts" title="随想">
+          <span class="lt-md:hidden cursor-pointer">随想</span>
+          <div i-ri-article-line md:hidden cursor-pointer />
+        </RouterLink>
+        <RouterLink to="/notes" title="小记">
+          <span class="lt-md:hidden cursor-pointer">小记</span>
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
         <ToggleTheme />
@@ -59,10 +62,6 @@
   transition: opacity 0.2s ease;
   opacity: 0.6;
   outline: none;
-}
-
-a:after {
-  background-color: transparent !important;
 }
 
 .nav a:hover {

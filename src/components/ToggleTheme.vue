@@ -9,7 +9,5 @@ import { toggleDark } from '../logics'
 </template>
 
 <style scoped>
-a:after {
-  background-color: transparent !important;
-}
+
 </style>

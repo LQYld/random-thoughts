@@ -1,52 +1,165 @@
-* {
-  color: var(--c-text);
+.dark .shiki,
+.dark .shiki span {
+  color: var(--s-dark, inherit);
+  --twoslash-popup-bg: #191919;
+  --twoslash-border-color: #8884;
+}
+.dark .shiki {
+  background-color: #0e0e0e;
 }
 
+html:not(.dark) .shiki,
+html:not(.dark) .shiki span {
+  color: var(--s-light, inherit);
+  background-color: #fafafa;
+  --twoslash-popup-bg: #fafafa;
+}
 
-h1 {
-  font-size: 2.6em;
-  font-weight: 600;
+.twoslash ul {
+  font-size: 1em !important;
+}
+
+.twoslash ul > li::before {
+  display: none;
+}
+
+.twoslash ul > li {
+  padding: 1px;
+  margin: 0;
+}
+
+.twoslash-query-presisted .twoslash-popup-info {
+  transform: translate(0, 1.6em);
+}
+
+/* Prose */
+.prose pre:not(.shiki) {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.prose .shiki {
+  font-family: 'DM Mono', 'Input Mono', 'Fira Code', monospace;
+  font-size: 0.92em;
   line-height: 1.4;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 0.5em 0;
 }
 
-p {
-  display: block;
-  font-size: 1.0em;
-  font-weight: 400;
-  line-height: 1.4;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+.prose img {
+  width: 100%;
 }
 
-a {
-  text-decoration: none !important;
-  position: relative;
-  cursor: pointer;
-  white-space: wrap;
+.prose p > img {
+  width: 100%;
+  --uno: shadow rounded-lg;
+  transform: scale(1.05);
+  margin: 2.6em 0;
 }
 
-a:after {
-  content: '' ;
-  position: absolute;
-  z-index: -1;
-  top: 66%;
-  left: -0.1em;
-  right: -0.1em;
-  bottom: 0;
-  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: var(--primary);
+.prose {
+  --fg: #555;
+  --fg-deep: #222;
+  --fg-deeper: #000;
+
+  color: var(--fg);
 }
 
-a:hover:after {
-  top: 0%;
+.prose a {
+  font-weight: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.3);
+  transition: border 0.3s ease-in-out;
 }
 
+.prose a:hover {
+  border-bottom: 1px solid var(--fg);
+}
+
+.prose a code {
+  color: inherit;
+}
+
+.prose hr {
+  width: 50px;
+  margin: 2em auto;
+}
+
+html.dark .prose {
+  --fg: #bbb;
+  --fg-deep: #ddd;
+  --fg-deeper: #fff;
+}
+
+a.item {
+  transition: 0.2s all ease-out;
+  text-decoration: none;
+  border-bottom: none !important;
+  opacity: 0.6;
+}
+
+a.item:hover {
+  opacity: 1;
+}
+
+a.header-anchor {
+  float: left;
+  margin-top: 0.125em;
+  margin-left: -1.2em;
+  padding-right: 0.5em;
+  font-size: 0.85em;
+  opacity: 0;
+  text-decoration: none;
+  border: 0 !important;
+}
+
+a.header-anchor:hover,
+a.header-anchor:focus {
+  text-decoration: none;
+}
+
+h1:hover .header-anchor,
+h1:focus .header-anchor,
+h2:hover .header-anchor,
+h2:focus .header-anchor,
+h3:hover .header-anchor,
+h3:focus .header-anchor,
+h4:hover .header-anchor,
+h4:focus .header-anchor,
+h5:hover .header-anchor,
+h5:focus .header-anchor,
+h6:hover .header-anchor,
+h6:focus .header-anchor {
+  opacity: 0.5;
+}
+
+.prose blockquote {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6em;
+  padding: 0.5em 1em;
+  margin-left: -1.1em;
+}
+
+.prose blockquote > * {
+  opacity: 0.7;
+}
+
+.prose blockquote > :first-child {
+  margin-top: 0;
+}
+
+.prose blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.prose blockquote p:first-of-type::before {
+  content: none;
+}
+
+.prose blockquote p:first-of-type::after {
+  content: none;
+}
 
 .table-of-contents {
   position: fixed;
@@ -78,11 +191,11 @@ a:hover:after {
 }
 
 .toc-always-on .table-of-contents > ul {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 *:hover > .table-of-contents > ul {
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .table-of-contents ul > li::before {
@@ -90,41 +203,15 @@ a:hover:after {
 }
 
 .table-of-contents ul > li {
+  padding-left: 0.8rem;
   line-height: 1.5em;
   margin-top: 0.5em;
-  list-style-type: none;
 }
 
 .table-of-contents ul > li > a {
   --uno: op75 hover-op100 transition;
-  text-decoration: underline !important;
 }
 
-.table-of-contents ul > li > a:after {
-  background-color: transparent !important;
+.code-wrap .line {
+  white-space: break-spaces;
 }
-
-.prose blockquote {
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.6em;
-  padding: 0em 1em;
-  margin-left: -1.1em;
-  background-color: rgba(229, 231, 235,0.3);
-  border-radius: 8px;
-  border: 1px solid rgba(229, 231, 235,1);
-}
-
-.dark .prose blockquote {
-  background-color: rgba(229, 231, 235,0.1);
-  border: 1px solid rgba(229, 231, 235,0.3);
-}
-
-.prose blockquote > p {
-  color: rgba(75,75,75,0.8);
-}
-
-.dark .prose blockquote > p {
-  color: rgba(187, 187, 187,0.8);
-}
-
