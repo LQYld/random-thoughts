@@ -48,13 +48,6 @@ export const createApp = ViteSSG(
 
       router.beforeEach((to,form,next) => {
         NProgress.start()
-        if (router.isRouteMatched(to)) {  
-          // 如果匹配，正常进行路由跳转  
-          next();  
-        } else {  
-          // 如果未匹配，重定向到404页面  
-          next('/404'); // 假设你的404页面路径为'/404'  
-        }  
       })
       router.afterEach(() => {
         NProgress.done()
