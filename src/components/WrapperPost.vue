@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {useRoute} from 'vue-router'
 import Footer from './Footer.vue';
-import Plum from './Plum.vue'
 const route = useRoute()
 
 import { formatDate } from '../logics'
@@ -16,7 +15,6 @@ const { frontmatter } = defineProps({
 </script>
 
 <template>
-   <Plum />
   <div class="prose m-auto mb-8">
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
