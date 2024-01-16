@@ -21,18 +21,4 @@ export const createApp = ViteSSG(
   {
     routes,
   },
-  ({ router }) => {
-
-      router.beforeEach((to,form,next) => {
-        if (to.path === '/') {
-          next();
-        } else {
-          if (router.hasRoute(to.path)) {
-            next();
-          } else {
-            next({ path: '/404' });
-          }
-        }
-      })
-    }
 )
