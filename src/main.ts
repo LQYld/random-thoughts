@@ -20,5 +20,21 @@ export const createApp = ViteSSG(
   App,
   {
     routes,
-  }
+  },
+  ({ router }) => {
+
+      router.beforeEach((to,form,next) => {
+        if (to.path === '/') {
+          next();
+        } else {
+          // 检查是否存在当前路由
+          if (router.hasRoute(to.path)) {
+            next();
+          } else {
+            // 不存在的路由跳转到 404 页面
+            next({ path: '/404' });
+          }
+        }
+      })
+    }
 )
