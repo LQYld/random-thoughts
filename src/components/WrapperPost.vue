@@ -3,8 +3,6 @@ import {useRoute} from 'vue-router'
 import Footer from './Footer.vue';
 const route = useRoute()
 
-import { formatDate } from '../logics'
-
 const { frontmatter } = defineProps({
   frontmatter: {
     type: Object,
@@ -19,9 +17,6 @@ const { frontmatter } = defineProps({
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
-    <p v-if="frontmatter.date"    class="opacity-50 !-mt-6 slide-enter-50">
-     {{ formatDate(frontmatter.date, false) }}
-    </p>
     <article ref="content">
       <slot />
     </article>
