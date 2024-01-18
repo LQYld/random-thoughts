@@ -1,4 +1,4 @@
-**[random-thoughts](random-thoughts.fe-ecosphere.com)**
+**[random-thoughts](https://random-thoughts.fe-ecosphere.com/)**
 
 我的随想记录.
 
