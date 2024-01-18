@@ -1,25 +1,7 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue'
-import { onMounted } from 'vue'
-import { useEventListener, useWindowScroll } from '@vueuse/core'
+import { useWindowScroll } from '@vueuse/core'
 
-onMounted(() => {
-  const navigate = () => {
-    if (location.hash) {
-      const el = document.querySelector(decodeURIComponent(location.hash))
-      if (el) {
-        const rect = el.getBoundingClientRect()
-        const y = window.scrollY + rect.top - 40
-        window.scrollTo({
-          top: y,
-          behavior: 'smooth',
-        })
-        return true
-      }
-    }
-  }
-  useEventListener(window, 'hashchange', navigate)
-})
 const { y: scroll } = useWindowScroll()
 function toTop() {
   window.scrollTo({
