@@ -20,7 +20,7 @@
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
         <RouterLink to="/notes" title="小记">
-          <span class="lt-md:hidden cursor-pointer">小记</span>
+          <span class="lt-md:hidden cursor-pointer">笔谈</span>
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
         <ToggleTheme />
