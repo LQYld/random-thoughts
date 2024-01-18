@@ -17,6 +17,12 @@ const { frontmatter } = defineProps({
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
     </h1>
+    <p
+      v-if="frontmatter.description"
+      class="opacity-50 !-mt-6 slide-enter-50"
+    >
+      {{ frontmatter.description }}
+    </p>
     <article ref="content">
       <slot />
     </article>
