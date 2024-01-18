@@ -1,5 +1,5 @@
 ---
-title: 设计文档
+title: 设计文档-极简
 lang: zh
 description: 设计文档是程序员清晰表达需求和设计思路的重要工具。
 ---

@@ -9,7 +9,8 @@
       to="/"
       focusable="false"
     >
-      <img w-10 dark:bg-white p-2 mr-3 rounded-2 src="/quill.png"/>
+      <!-- <img w-14 p-2 mr-3 rounded-2 src="/logo.png"/> -->
+      <div text-2xl i-ph-book-open-text />
     </RouterLink>
     <nav class="nav">
       <div class="spacer" />
