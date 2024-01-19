@@ -11,7 +11,6 @@ declare module 'vue' {
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Tag: typeof import('./src/components/Tag.vue')['default']
     TalkDate: typeof import('./src/components/TalkDate.vue')['default']
     ToggleTheme: typeof import('./src/components/ToggleTheme.vue')['default']
     WrapperPost: typeof import('./src/components/WrapperPost.vue')['default']
