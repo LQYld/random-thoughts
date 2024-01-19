@@ -18,10 +18,21 @@
           <span class="lt-md:hidden cursor-pointer">随想</span>
           <div i-mdi-lightbulb-on-30 md:hidden cursor-pointer />
         </RouterLink>
-        <RouterLink to="/notes" title="小记">
+        <RouterLink to="/notes" title="笔录">
           <span class="lt-md:hidden cursor-pointer">笔录</span>
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
+        <RouterLink to="/leetcode" title="力扣解答">
+          <span class="lt-md:hidden cursor-pointer">力扣解答</span>
+          <div i-simple-icons-leetcode md:hidden cursor-pointer />
+        </RouterLink>
+        <a href="https://github.com/LQYld/random-thoughts/issues" title="issues" target="_blank">
+          <span class="lt-md:hidden cursor-pointer">issues</span>
+          <div i-codicon-issues md:hidden cursor-pointer />
+        </a>
+        <a href="https://github.com/LQYld/random-thoughts/" title="github" target="_blank">
+          <div i-uil-github-alt cursor-pointer />
+        </a>
         <ToggleTheme />
       </div>
     </nav>
