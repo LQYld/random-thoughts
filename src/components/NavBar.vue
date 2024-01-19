@@ -9,7 +9,6 @@
       to="/"
       focusable="false"
     >
-      <!-- <img w-14 p-2 mr-3 rounded-2 src="/logo.png"/> -->
       <div text-2xl i-ph-book-open-text />
     </RouterLink>
     <nav class="nav">
@@ -17,7 +16,7 @@
       <div class="right" print:op0>
         <RouterLink to="/posts" title="随想">
           <span class="lt-md:hidden cursor-pointer">随想</span>
-          <div i-ri-article-line md:hidden cursor-pointer />
+          <div i-mdi-lightbulb-on-30 md:hidden cursor-pointer />
         </RouterLink>
         <RouterLink to="/notes" title="小记">
           <span class="lt-md:hidden cursor-pointer">笔录</span>

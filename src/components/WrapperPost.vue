@@ -84,7 +84,7 @@ onMounted(() => {
     <p v-if="frontmatter.description" class="opacity-50 !-mt-6 slide-enter-50">
       {{ frontmatter.description }}
     </p>
-    <article ref="content">
+    <article ref="content" :class="[frontmatter.tocAlwaysOn ? 'toc-always-on' : '', frontmatter.class]">
       <slot />
     </article>
     <div class="prose m-auto mt-8 mb-8 slide-enter animate-delay-500 print:hidden" v-if="route.path !== '/'">
