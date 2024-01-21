@@ -10,7 +10,7 @@ description: 心流是一种非常有益的心理状态，可以帮助人们提�
 
 然而，本人与心流的初次相遇，是源于一部叫做 [**黑子的篮球**](https://zh.wikipedia.org/wiki/%E9%BB%91%E5%AD%90%E7%9A%84%E7%B1%83%E7%90%83) 的作品中所呈现的“zone”状态。
 
-<img w-full src="/flow/zone.png"/>
+<img src="/notes/flow/zone.png"/>
 
 仔细回想，日本动漫中有很多先例都暗示着心流的存在。比如 [**七龙珠**](https://zh.wikipedia.org/wiki/%E9%BB%91%E5%AD%90%E7%9A%84%E7%B1%83%E7%90%83)  中的超级赛亚人、 [**海贼王**](https://zh.wikipedia.org/wiki/ONE_PIECE)  里路飞的 1-4 档、[**火影忍者**](https://zh.wikipedia.org/wiki/%E7%81%AB%E5%BD%B1%E5%BF%8D%E8%80%85)  中鸣人的仙人模式等等。
 
