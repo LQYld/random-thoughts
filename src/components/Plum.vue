@@ -27,7 +27,7 @@ function CanvasController(id) {
   this.canvas = canvas;
   this.canvasCtx = canvas.getContext('2d');
   this.width = canvas.width;
-  this.height = canvas.height;
+  this.height = canvas.height + 1000;
   this.children = new Array();
 
   this.rendering = function () {
