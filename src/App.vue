@@ -12,6 +12,7 @@ function toTop() {
 </script>
 
 <template>
+  <Plum />
   <NavBar />
   <div>
     <div i-ri-menu-2-fill hidden />

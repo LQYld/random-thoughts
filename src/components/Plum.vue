@@ -1,5 +1,4 @@
 <script setup lang='ts'>
-
 /* canvas object */
 function initSakura() {
   window.SakuraCanvas = new CanvasController('sakura');
@@ -153,7 +152,7 @@ function Sakura(x, y, scale, direction, rotate, wind) {
   };
 }
 function addSpotLight(radius) {
-  var num = Math.floor(SakuraCanvas.width / (radius * 2));
+  var num = Math.floor(SakuraCanvas.width / (radius * 1));
   for (var i = 0; i < num; i++) {
     SakuraCanvas.addChild(new SpotLight(
       ((SakuraCanvas.width / num) * Math.random()) + ((SakuraCanvas.width / num) * i),
