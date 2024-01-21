@@ -77,6 +77,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <Plum />
   <div class="prose m-auto mb-8">
     <h1 class="mb-0 slide-enter-50">
       {{ frontmatter.display ?? frontmatter.title }}
