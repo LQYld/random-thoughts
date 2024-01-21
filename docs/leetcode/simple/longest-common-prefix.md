@@ -34,23 +34,21 @@ lang: zh
  * @param {string[]} strs
  * @return {string}
  */
-var longestCommonPrefix = function(strs) {
+var longestCommonPrefix = function (strs) {
   let str = '';
   const firstItem = strs?.[0] || '';
-  if(firstItem){
-    for(var i = 0; i<firstItem.length; i++){
-      var bool = true;
-      for(var j = 0; j < strs.length; j++){
-        if(strs[j][i] !== firstItem[i]){
-          bool = false;
-          break;
-        }
+  for (var i = 0; i < firstItem.length; i++) {
+    var bool = true;
+    for (var j = 0; j < strs.length; j++) {
+      if (strs[j][i] !== firstItem[i]) {
+        bool = false;
+        break;
       }
-      if(bool){
-        str +=firstItem[i]
-      }else{
-        return str;
-      }
+    }
+    if (bool) {
+      str += firstItem[i]
+    } else {
+      return str;
     }
   }
   return str;
