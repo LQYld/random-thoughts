@@ -23,7 +23,7 @@
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
         <RouterLink to="/leetcode" title="力扣解答">
-          <span class="lt-md:hidden cursor-pointer">力扣题解</span>
+          <span class="lt-md:hidden cursor-pointer">力扣</span>
           <div i-simple-icons-leetcode md:hidden cursor-pointer />
         </RouterLink>
         <a href="https://github.com/LQYld/random-thoughts/issues" title="issues" target="_blank">

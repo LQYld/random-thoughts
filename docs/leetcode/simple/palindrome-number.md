@@ -42,7 +42,7 @@ lang: zh
  */
 var isPalindrome = function(x) {
     if(x<0)return false;
-    let ord = Math.abs(x);//去符号
+    let ord = x;
     let now = 0;
     while(ord > 0){
         now = now * 10 + ord % 10;
