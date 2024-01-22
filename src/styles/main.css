@@ -5,9 +5,11 @@
 }
 
 html {
+  min-height: 100vh;
   background-color: var(--c-bg);
   overflow-x: hidden;
   overflow-y: scroll;
+  background-image: url(/texture.png)
 }
 
 html.dark {
