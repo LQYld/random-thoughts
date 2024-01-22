@@ -1,4 +1,7 @@
 <script setup lang='ts'>
+let color01 = ref('rgba(230,230,230,1)');
+let color02 = ref('rgba(255,210,210,1)');
+let color03 = ref('rgba(255,150,150,0.9)');
 /* canvas object */
 function initSakura() {
   window.SakuraCanvas = new CanvasController('sakura');
@@ -7,8 +10,8 @@ function initSakura() {
   anim();
 }
 function anim() {
-  if (Math.random() > 0.25 && SakuraCanvas.children.length < 200) addSakura(1, 1, 1, SakuraCanvas.width, 1);
-  if (fallenSakura > 50) {
+  if (Math.random() > 0.25 && SakuraCanvas.children.length < 20) addSakura(1, 1, 1, SakuraCanvas.width, 1);
+  if (fallenSakura > 10) {
     var l = SakuraCanvas.children.length;
     for (var i = 0; i < l; i++) {
       var child = SakuraCanvas.children[i];
@@ -91,9 +94,9 @@ function Sakura(x, y, scale, direction, rotate, wind) {
     ctx.scale(this.scale, this.scale);
 
     var grad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.length);
-    grad.addColorStop(0, 'rgba(255,250,250,1)');
-    grad.addColorStop(0.6, 'rgba(255,230,230,1)');
-    grad.addColorStop(1, 'rgba(255,150,150,0.4)');
+    grad.addColorStop(0, color01.value);
+    grad.addColorStop(0.6, color02.value);
+    grad.addColorStop(1, color03.value);
     ctx.fillStyle = grad;
     ctx.shadowColor = ('rgb(255,255,255)');
     ctx.shadowBlur = 15;
@@ -182,8 +185,29 @@ function SpotLight(x, y, radius) {
   };
 }
 
+const initCherryBlossoms = () => {
+  var flowers = document.querySelectorAll(".flower");
+  for(let i = 0;i<flowers.length; i++){
+    const flower = flowers[i];
+    setTimeout(function () {
+      flower.style.opacity = 0;
+      var opacity = 0;
+      var timer = setInterval(function () {
+        opacity += 0.1;
+        flower.style.opacity = opacity;
+        if (opacity >= 1) {
+          clearInterval(timer);
+        }
+      }, 100 / 6);
+      if(i === flowers.length-1){
+        return  initSakura();
+      }
+    }, i * 40 + 3000);
+  }
+}
+
 onMounted(() => {
-  initSakura();
+  initCherryBlossoms();
 })
 
 const mask = computed(() => 'radial-gradient(circle, transparent, black);')
@@ -193,5 +217,6 @@ const mask = computed(() => 'radial-gradient(circle, transparent, black);')
   <div class="fixed top-0 bottom-0 left-0 right-0 pointer-events-none print:hidden" style="z-index: -1"
     :style="`mask-image: ${mask};--webkit-mask-image: ${mask};`">
     <canvas id="sakura" ref="el" width="400" height="400" />
+    <CherryBlossoms />
   </div>
 </template>
