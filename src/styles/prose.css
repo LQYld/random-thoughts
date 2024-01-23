@@ -1,6 +1,6 @@
 .prose {
   color: var(--fg);
-  max-width: 85ch;
+  max-width: 70ch;
   font-size: 1.0rem;
   line-height: 1.75;
 }
