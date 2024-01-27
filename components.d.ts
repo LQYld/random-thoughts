@@ -9,7 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     CherryBlossoms: typeof import('./src/components/CherryBlossoms.vue')['default']
     CherryTree: typeof import('./src/components/CherryTree.vue')['default']
+    Elk: typeof import('~icons/el/k')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    ListProjects: typeof import('./src/components/ListProjects.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     Plum: typeof import('./src/components/Plum.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
