@@ -26,6 +26,10 @@
           <span class="lt-md:hidden cursor-pointer">力扣</span>
           <div i-simple-icons-leetcode md:hidden cursor-pointer />
         </RouterLink>
+        <!-- <RouterLink to="/map" title="速查">
+          <span class="lt-md:hidden cursor-pointer">速查</span>
+          <div i-streamline-dictionary-language-book md:hidden cursor-pointer />
+        </RouterLink> -->
         <RouterLink to="/co-reading" title="共读">
           <span class="lt-md:hidden cursor-pointer">共读</span>
           <div i-material-symbols-frame-source-sharp md:hidden cursor-pointer />
