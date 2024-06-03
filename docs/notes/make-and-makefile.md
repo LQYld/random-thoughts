@@ -22,11 +22,11 @@ make 依据一个用户编写的文件，在这个文件中（通常命名为 Ma
 
 ## 安装 make
 
-#### windows
+### windows
 
 因为 **make** 只能在 Unix/Linux 下运行，所以，如果使用 **windows** 系统，我们要先想办法在 windows 中跑一个 Linux环境。然后在以 Linux 的方式进行安装。
 
-#### mac
+### mac
 
 因为 **macOS**，它的内核是一种 **Unix**，所以可以直接执行 **make**。
 
@@ -36,7 +36,7 @@ make 依据一个用户编写的文件，在这个文件中（通常命名为 Ma
 brew install make gcc
 ```
 
-#### linux
+### linux
 
 ```shell
 sudo apt install build-essentail
@@ -270,7 +270,7 @@ var-lost:
 
 ## Makefile 文件的语法
 
-#### 注释
+### 注释
 
 **#**，表示注释。
 
@@ -282,7 +282,7 @@ result.txt: source.txt
   cp source.txt result.txt # 这是一行注释
 ```
 
-#### 回声（echoing）
+### 回声（echoing）
 
 先来解释一下什么是 **回声**。通常指的是命令或操作的输出信息。
 
@@ -315,7 +315,7 @@ test:
 
 > 这里有个小小的建议。由于在构建过程中，需要了解当前在执行哪条命令，所以通常只在注释和纯显示的echo命令前面加上 **@**。
 
-#### 通配符
+### 通配符
 
 通配符（wildcard）用来指定一组符合条件的文件名。主要有星号（*）、问号（？）和 [...] 。
 
@@ -332,7 +332,7 @@ clean:
 - 第一步，创建名为 **clean** 的伪目标
 - 第二步，强制删除所有以.js结尾的文件
 
-#### 模式匹配
+### 模式匹配
 
 **make** 命令允许对文件名，进行类似正则运算的匹配，主要用到的匹配符是 **%**。比如，假定当前目录下有 f1.c 和 f2.c 两个源码文件，需要将它们编译为对应的对象文件。
 
@@ -349,7 +349,7 @@ f2.o: f2.c
 
 使用匹配符%，可以将大量同类型的文件，只用一条规则就完成构建。
 
-#### 变量和赋值符
+### 变量和赋值符
 
 > 这是 **Makefile** 最重要的语法之一。它使 **Makefile** 拥有了更多的扩展性。
 
@@ -397,17 +397,17 @@ VARIABLE += value
 # 将值追加到变量的尾端。
 ```
 
-#### 内置变量（Implicit Variables）
+### 内置变量（Implicit Variables）
 
 Make命令提供一系列内置变量，除了上文之前提到的（**.ONESHELL**、**.RECIPEPREFIX**）之外还有很多。
 
 比如，$(CC) 指向当前使用的编译器，$(MAKE) 指向当前使用的Make工具。这主要是为了跨平台的兼容性，详细的内置变量清单见 [make 内置变量手册](https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html)。
 
-#### 自动变量（Automatic Variables）
+### 自动变量（Automatic Variables）
 
 **make** 命令还提供一些自动变量，它们的值与当前规则有关。主要有以下几个。
 
-##### $@
+#### $@
 
 <span>$@</span>就是 **make** 命令当前构建的那个目标。比如，**make foo** 的 **$@** 指的是 **foo**。
 
@@ -440,7 +440,7 @@ a.txt b.txt:
 
 第二个规则有两个目标：a.txt 和 b.txt。命令 touch a.txt b.txt 将同时为这两个目标运行。这意味着不管你执行 make a.txt 还是 make b.txt，结果都是两个文件 a.txt 和 b.txt 都会被 touch 命令更新。换句话说，这个规则将把 a.txt 和 b.txt 看作是有相同依赖关系和构建命令的目标。
 
-##### $<
+#### $<
 
 <span>$< 指代第一个前置条件。比如，规则为 t: p1 p2，那么$< 就指代p1。</span>
 
@@ -456,23 +456,23 @@ a.txt: b.txt c.txt
   cp b.txt a.txt 
 ```
 
-##### $?
+#### $?
 
 <span>$? 指代比目标更新的所有前置条件，之间以空格分隔。比如，规则为 t: p1 p2，其中 p2 的时间戳比 t 新，$?就指代p2。</span>
 
-##### $^
+#### $^
 
 <span>$^ 指代所有前置条件，之间以空格分隔。比如，规则为 t: p1 p2，那么 $^ 就指代 p1 p2 。</span>
 
-##### $*
+#### $*
 
 <span>$* 指代匹配符 % 匹配的部分， 比如% 匹配 f1.txt 中的f1 ，$* 就表示 f1。</span>
 
-##### $(@D) 和 $(@F)
+#### $(@D) 和 $(@F)
 
 <span>$(@D) 和 $(@F) 分别指向 $@ 的目录名和文件名。比如，$@是 src/input.c，那么$(@D) 的值为 src ，$(@F) 的值为 input.c。</span>
 
-##### \$(<D) 和 \$(<F)
+#### \$(<D) 和 \$(<F)
 
 <span>$(&lt;D) 和 $(&lt;F) 分别指向 $&lt; 的目录名和文件名。</span>
 
@@ -486,7 +486,7 @@ dest/%.txt: src/%.txt
 
 <span>上面代码将 src 目录下的 txt 文件，拷贝到 dest 目录下。首先判断 dest 目录是否存在，如果不存在就新建，然后，$&lt; 指代前置文件（src/%.txt）， $@ 指代目标文件（dest/%.txt）。</span>
 
-#### 判断和循环
+### 判断和循环
 
 **Makefile** 使用 **Bash** 语法，完成判断和循环。
 
@@ -523,7 +523,7 @@ two
 three
 ```
 
-#### 函数
+### 函数
 
 **Makefile** 还可以使用函数，格式如下。
 
@@ -535,7 +535,7 @@ ${function arguments}
 
 **Makefile** 提供了许多 [内置函数](https://ruanyifeng.com/blog/2015/02/make.html)，可供调用。下面是几个常用的内置函数。
 
-##### shell 函数
+#### shell 函数
 
 shell 函数用来执行 shell 命令
 
@@ -543,7 +543,7 @@ shell 函数用来执行 shell 命令
 srcfiles := $(shell echo src/{00..99}.txt)
 ```
 
-##### wildcard 函数
+#### wildcard 函数
 
 wildcard 函数用来在 Makefile 中，替换 Bash 的通配符。
 
@@ -551,7 +551,7 @@ wildcard 函数用来在 Makefile 中，替换 Bash 的通配符。
 srcfiles := $(wildcard src/*.txt)
 ```
 
-##### subst 函数
+#### subst 函数
 
 subst 函数用来文本替换，格式如下。
 
@@ -577,7 +577,7 @@ bar:= $(subst $(space),$(comma),$(foo))
 # bar is now `a,b,c'.
 ```
 
-##### patsubst函数
+#### patsubst函数
 
 patsubst 函数用于模式匹配的替换，格式如下。
 
@@ -591,7 +591,7 @@ $(patsubst pattern,replacement,text)
 $(patsubst %.c,%.o,x.c.c bar.c)
 ```
 
-##### 替换后缀名
+#### 替换后缀名
 
 替换后缀名函数的写法是：变量名 + 冒号 + 后缀名替换规则。它实际上patsubst函数的一种简写形式。
 
