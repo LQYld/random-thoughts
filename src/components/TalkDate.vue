@@ -4,7 +4,6 @@ import { formatDate } from '~/logics'
 const props = defineProps<{
   date: string
 }>()
-
 </script>
 
 <template>

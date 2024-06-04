@@ -55,6 +55,6 @@ export function toggleDark(event: MouseEvent) {
 export function formatDate(d: string | Date, onlyDate = true) {
   const date = dayjs(d)
   if (onlyDate || date.year() === dayjs().year())
-    return date.format('MM月 D日 HH点mm分')
-  return date.format('YYYY年 MM月 D日 HH点mm分')
+    return date.format('MMM D')
+  return date.format('MMM D, YYYY')
 }
