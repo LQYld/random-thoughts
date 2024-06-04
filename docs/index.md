@@ -20,7 +20,7 @@ Hey, I am   <ruby>
 
 Working at <a><font color="#5086a1">Skylink</font></a>.
 
-Committed to architecture design, automation, user experience, and AIGC.
+Committed to <a><font color="#cb7676">architecture design</font></a>, <a><font color="#cb7676">automation, user experience</font></a>, and <a><font color="#cb7676">AIGC</font></a>.
 
 Project Type: <a><font color="#fbbc05">ToB</font></a> <a><font color="#fbbc05">ToC</font></a> .
 
