@@ -14,26 +14,26 @@
     <nav class="nav">
       <div class="spacer" />
       <div class="right" print:op0>
-        <RouterLink to="/posts" title="随想">
+        <!-- <RouterLink to="/posts" title="随想">
           <span class="lt-md:hidden cursor-pointer">随想</span>
           <div i-mdi-lightbulb-on-30 md:hidden cursor-pointer />
-        </RouterLink>
-        <RouterLink to="/notes" title="笔录">
-          <span class="lt-md:hidden cursor-pointer">笔录</span>
+        </RouterLink> -->
+        <RouterLink to="/notes" title="Blog">
+          <span class="lt-md:hidden cursor-pointer">Blog</span>
           <div i-ri-article-line md:hidden cursor-pointer />
         </RouterLink>
-        <RouterLink to="/leetcode" title="力扣">
+        <!-- <RouterLink to="/leetcode" title="力扣">
           <span class="lt-md:hidden cursor-pointer">力扣</span>
           <div i-simple-icons-leetcode md:hidden cursor-pointer />
-        </RouterLink>
+        </RouterLink> -->
         <!-- <RouterLink to="/map" title="速查">
           <span class="lt-md:hidden cursor-pointer">速查</span>
           <div i-streamline-dictionary-language-book md:hidden cursor-pointer />
         </RouterLink> -->
-        <RouterLink to="/co-reading" title="共读">
+        <!-- <RouterLink to="/co-reading" title="共读">
           <span class="lt-md:hidden cursor-pointer">共读</span>
           <div i-material-symbols-frame-source-sharp md:hidden cursor-pointer />
-        </RouterLink>
+        </RouterLink> -->
         <a href="https://github.com/LQYld/random-thoughts/issues" title="issues" target="_blank">
           <span class="lt-md:hidden cursor-pointer">issues</span>
           <div i-codicon-issues md:hidden cursor-pointer />
