@@ -16,7 +16,7 @@ function toTop() {
   <NavBar />
   <div>
     <div i-ri-menu-2-fill hidden />
-    <main class="px-7 py-10 of-x-hidden">
+    <main class="px-7 py-10 pt-0 of-x-hidden">
       <RouterView />
     </main>
     <button title="Scroll to top" fixed right-3 bottom-3 w-10 h-10 hover:op100 rounded-full hover-bg-hex-8883 transition
