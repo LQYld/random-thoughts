@@ -26,7 +26,7 @@ Project Type: <a><font color="#fbbc05">ToB</font></a> <a><font color="#fbbc05">T
 
 I love to think about ideas and bring them to life. If you have an amazing piece of art, composition or interactive experiment, get in touch with me and we can bring it to life together.
 
-Here I will post articles about open source, coding, tutorials, etc.
+Here I will post articles about open source, coding, tutorials, etc. The original intention is not only to record, but also to improve English ability, because learning through practice is often the fastest way.
 
 I currently live in Chongqing, China. If you're nearby, feel free to contact me and we can meet up for a coffee and chat.
 
