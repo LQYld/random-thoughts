@@ -64,6 +64,7 @@ export default  defineConfig({
 
         if (!path.includes('projects.md') && path.endsWith('.md')) {
           const { data } = matter(fs.readFileSync(path, 'utf-8'))
+          console.log(data,'data')
           route.addToMeta({
             frontmatter: data,
           })
@@ -72,6 +73,9 @@ export default  defineConfig({
     }),
     Vue({
       include: [/\.vue$/, /\.md$/],
+      script: {
+        defineModel: true,
+      },
     }),
     Icons({
       defaultClass: 'inline',
