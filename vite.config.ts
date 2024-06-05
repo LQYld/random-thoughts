@@ -129,4 +129,8 @@ export default  defineConfig({
       },
     },
   },
+  
+  ssgOptions: {
+    formatting: 'minify',
+  },
 })
