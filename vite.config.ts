@@ -34,9 +34,6 @@ export default  defineConfig({
     ],
   },
   plugins: [
-    Vue({
-      include: [/\.vue$/, /\.md$/],
-    }),
     Unocss(),
     AutoImport({
       imports: [
@@ -72,6 +69,9 @@ export default  defineConfig({
           })
         }
       },
+    }),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
     }),
     Icons({
       defaultClass: 'inline',
