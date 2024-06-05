@@ -8,8 +8,6 @@ import './styles/markdown.css'
 import { routes } from 'vue-router/auto-routes'
 import 'uno.css'
 
-console.log(routes,'====')
-
 export const createApp = ViteSSG(
   App,
   {
