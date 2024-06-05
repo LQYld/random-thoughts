@@ -41,6 +41,9 @@
         <a href="https://github.com/LQYld/random-thoughts/" title="github" target="_blank">
           <div i-uil-github-alt cursor-pointer />
         </a>
+        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
+          <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
+        </a>
         <ToggleTheme />
       </div>
     </nav>

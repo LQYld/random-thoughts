@@ -1,7 +1,8 @@
 ---
 title: 一文读懂什么是 make ? 什么是 Makefile ?
 lang: zh
-description: 
+description: 当前主流的前端构建都是 webpack、vite、rollup 等等。如果需要语言的环境的话，构建使用的指令就会错综复杂。这种场景下 make 或许是一个不错的选择。
+date: 2024-06-03 21:01:00
 ---
 
 [[toc]]

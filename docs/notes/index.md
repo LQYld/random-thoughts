@@ -9,3 +9,4 @@
 | <TalkDate date="2024-02-01 22:49:00"/> | [**浅谈npm的语义化版本**](/notes/npm-semantic-version.html) | zh |
 | <TalkDate date="2024-06-02 17:40:00"/> | [**深入了解 TDD**](/notes/deep-understanding-of-TDD.html) | zh |
 | <TalkDate date="2024-06-03 21:01:00"/> | [**一文读懂什么是 make ? 什么是 Makefile ?**](/notes/make-and-makefile.html) | zh |
+| <TalkDate date="2024-06-05 18:01:00"/> | [**rss 入门指北**](/notes/rss-getting-started-guide.html) | zh |
