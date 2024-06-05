@@ -6,7 +6,7 @@ import MarkdownItShikiji from 'markdown-it-shikiji'
 import TOC from 'markdown-it-table-of-contents'
 import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
-import Pages from 'vite-plugin-pages'
+import VueRouter from 'unplugin-vue-router/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import anchor from 'markdown-it-anchor'
 import LinkAttributes from 'markdown-it-link-attributes'
@@ -56,19 +56,21 @@ export default  defineConfig({
         }),
       ],
     }),
-    Pages({
-      extensions: ['vue', 'md'],
-      dirs: 'docs',
+    VueRouter({
+      extensions: ['.vue', '.md'],
+      routesFolder: 'docs',
+      logs: true,
       extendRoute(route) {
-        const path = resolve(__dirname, route.component.slice(1))
+        const path = route.components.get('default')
+        if (!path)
+          return
 
-        if (path.endsWith('.md')) {
-          const md = fs.readFileSync(path, 'utf-8')
-          const { data } = matter(md)
-          route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+        if (!path.includes('projects.md') && path.endsWith('.md')) {
+          const { data } = matter(fs.readFileSync(path, 'utf-8'))
+          route.addToMeta({
+            frontmatter: data,
+          })
         }
-
-        return route
       },
     }),
     Icons({
