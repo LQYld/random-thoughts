@@ -32,6 +32,7 @@ declare module 'vue-router/auto-routes' {
     '/leetcode/simple/sum-of-two-numbers': RouteRecordInfo<'/leetcode/simple/sum-of-two-numbers', '/leetcode/simple/sum-of-two-numbers', Record<never, never>, Record<never, never>>,
     '/leetcode/simple/valid-parentheses': RouteRecordInfo<'/leetcode/simple/valid-parentheses', '/leetcode/simple/valid-parentheses', Record<never, never>, Record<never, never>>,
     '/notes/': RouteRecordInfo<'/notes/', '/notes', Record<never, never>, Record<never, never>>,
+    '/notes/combining-jsdoc-with-typeScript': RouteRecordInfo<'/notes/combining-jsdoc-with-typeScript', '/notes/combining-jsdoc-with-typeScript', Record<never, never>, Record<never, never>>,
     '/notes/deep-understanding-of-TDD': RouteRecordInfo<'/notes/deep-understanding-of-TDD', '/notes/deep-understanding-of-TDD', Record<never, never>, Record<never, never>>,
     '/notes/design-documentation': RouteRecordInfo<'/notes/design-documentation', '/notes/design-documentation', Record<never, never>, Record<never, never>>,
     '/notes/design-documentation-min': RouteRecordInfo<'/notes/design-documentation-min', '/notes/design-documentation-min', Record<never, never>, Record<never, never>>,
