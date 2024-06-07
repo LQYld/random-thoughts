@@ -5,6 +5,8 @@ description: In the current mainstream situation of TypeScript, I still recommen
 date: 2024-06-06 17:48:00
 ---
 
+[[toc]]
+
 > I would like to write this article in English. The most important purpose is to improve my English reading and  writing abilities.
 
 In the current mainstream situation of TypeScript, I still recommend using JSDoc in projects. Some people may think that TypeScript completely covers the JSDoc capabilities we need, and continuing to use it is adding insult to injury. I will do my best to express my views clearly and let you see the other side of it.
