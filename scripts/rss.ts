@@ -53,11 +53,11 @@ async function buildBlogRSS() {
    * @name 基础信息，用于feed生成rss订阅源使用
    */
   const options = {
-    title: 'Qingyun199\' Blog',
-    description: 'Qingyun199\' Blog',
+    title: 'Ethan Li\' Blog',
+    description: 'Ethan Li\' Blog',
     id: 'https://random-thoughts.fe-ecosphere.com/',
     link: 'https://random-thoughts.fe-ecosphere.com/',
-    copyright: 'CC BY-NC-SA 4.0 2024 © Qingyun199',
+    copyright: 'CC BY-NC-SA 4.0 2024 © Ethan Li',
     feedLinks: {
       json: 'https://random-thoughts.fe-ecosphere.com/feed.json',
       atom: 'https://random-thoughts.fe-ecosphere.com/feed.atom',
