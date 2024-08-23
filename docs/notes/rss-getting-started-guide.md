@@ -98,7 +98,7 @@ const DOMAIN = 'https://random-thoughts.fe-ecosphere.com/'
  * @name 定义作者信息
  */
 const AUTHOR = {
-  name: 'Qingyun119',
+  name: 'Ethan Li',
   email: 'liqingyunld@gmail.com',
   link: DOMAIN,
 }

@@ -42,7 +42,6 @@ declare module 'vue-router/auto-routes' {
     '/notes/poetic-bonds-in-the-digital-age': RouteRecordInfo<'/notes/poetic-bonds-in-the-digital-age', '/notes/poetic-bonds-in-the-digital-age', Record<never, never>, Record<never, never>>,
     '/notes/rss-getting-started-guide': RouteRecordInfo<'/notes/rss-getting-started-guide', '/notes/rss-getting-started-guide', Record<never, never>, Record<never, never>>,
     '/notes/talk-about-npm-shrinkwrap': RouteRecordInfo<'/notes/talk-about-npm-shrinkwrap', '/notes/talk-about-npm-shrinkwrap', Record<never, never>, Record<never, never>>,
-    '/notes/vue-vs-react': RouteRecordInfo<'/notes/vue-vs-react', '/notes/vue-vs-react', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/flow': RouteRecordInfo<'/posts/flow', '/posts/flow', Record<never, never>, Record<never, never>>,
   }

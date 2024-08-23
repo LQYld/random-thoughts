@@ -1,22 +1,18 @@
 <h1>
   <ruby>
-    Qing
-    <rt>qìng</rt>
+    Ethan
   </ruby>
   <ruby>
-    yun
-    <rt>yǔn</rt>
-  </ruby>119
+    Li
+  </ruby>
 </h1>
 
 Hey, I am   <ruby>
-    Qing
-    <rt>qìng</rt>
+    Ethan
   </ruby>
   <ruby>
-    yun
-    <rt>yǔn</rt>
-  </ruby>119, a Front-end development programmer.
+    Li
+  </ruby>, a Front-end development programmer.
 
 Working at <a><font color="#5086a1">Skylink</font></a>.
 
@@ -42,11 +38,9 @@ Or mail me at liqingyunld@gmail.com
 
 <p class="text-right">
   <ruby>
-    Qing
-    <rt>qìng</rt>
+    Ethan
   </ruby>
   <ruby>
-    yun
-    <rt>yǔn</rt>
-  </ruby>119
+    Li
+  </ruby>
 </p>
