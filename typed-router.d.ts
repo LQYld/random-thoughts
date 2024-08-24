@@ -36,6 +36,7 @@ declare module 'vue-router/auto-routes' {
     '/notes/deep-understanding-of-TDD': RouteRecordInfo<'/notes/deep-understanding-of-TDD', '/notes/deep-understanding-of-TDD', Record<never, never>, Record<never, never>>,
     '/notes/design-documentation': RouteRecordInfo<'/notes/design-documentation', '/notes/design-documentation', Record<never, never>, Record<never, never>>,
     '/notes/design-documentation-min': RouteRecordInfo<'/notes/design-documentation-min', '/notes/design-documentation-min', Record<never, never>, Record<never, never>>,
+    '/notes/first-time-customized-keyboard': RouteRecordInfo<'/notes/first-time-customized-keyboard', '/notes/first-time-customized-keyboard', Record<never, never>, Record<never, never>>,
     '/notes/how-to-ask-the-right-question': RouteRecordInfo<'/notes/how-to-ask-the-right-question', '/notes/how-to-ask-the-right-question', Record<never, never>, Record<never, never>>,
     '/notes/make-and-makefile': RouteRecordInfo<'/notes/make-and-makefile', '/notes/make-and-makefile', Record<never, never>, Record<never, never>>,
     '/notes/npm-semantic-version': RouteRecordInfo<'/notes/npm-semantic-version', '/notes/npm-semantic-version', Record<never, never>, Record<never, never>>,
