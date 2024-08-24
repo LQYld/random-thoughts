@@ -20,25 +20,23 @@ Its battery life is also outstanding. It can replenish enough power for the devi
 
 ### MX MECHANICAL MINI
 
-在罗技的系列中，[MX MECHANICAL MINI](https://www.logitech.com/zh-cn/products/keyboards/mx-mechanical-mini.html)。几乎是我当时最心仪的目标。
+In the Logitech series, [MX MECHANICAL MINI](https://www.logitech.com/zh-cn/products/keyboards/mx-mechanical-mini.html) was almost my favorite target at that time.
 
-> 但是唯一不足的地方是它只有红轴、青轴、茶轴3款轴体可供选择。并且似乎它并不支持热插拔。
+> But the only downside is that it only has three axis options: red axis, blue axis, and brown axis. And it doesn't seem to support hot swapping.
 
-
-当我还在纠结到底是否入手 [MX MECHANICAL MINI](https://www.logitech.com/zh-cn/products/keyboards/mx-mechanical-mini.html) 的时候，另一款键盘进入了我的视野。
+When I was still hesitating whether to buy [MX MECHANICAL MINI](https://www.logitech.com/zh-cn/products/keyboards/mx-mechanical-mini.html), another keyboard came into my sight.
 
 ### Happy Hacking Keyboard
 
-[Happy Hacking Keyboard ](https://happyhackingkb.com/)，缩写是 HHKB。他的标语是，Happy Hacking 键盘从按键开关、尺寸、结构到布局的各个方面都是专业人士的完美键盘，提供极致的耐用性和舒适性。
+[Happy Hacking Keyboard ](https://happyhackingkb.com/), abbreviated as HHKB. His slogan is that the Happy Hacking keyboard is the perfect keyboard for professionals in every aspect from key switches, size, structure to layout, providing ultimate durability and comfort.
 
-它采用 Electrostatic Capacitor Technology。
+It uses Electrostatic Capacitor Technology.
 
-**静电容轴体**，其原理是在按下按键后，感应电路检测到电极之间静电容量值的变化从而判定触发。静电容键盘的手感主要来源于弹力硅胶碗，锥形弹簧则提供辅助支撑。
+**Capacitive switch**, its principle is that after pressing the key, the induction circuit detects the change in the electrostatic capacitance value between the electrodes to determine the trigger. The feel of the capacitive keyboard mainly comes from the elastic silicone bowl, and the conical spring provides auxiliary support.
 
-由于没有了物理触点的摩擦，使用寿命会更加长久，而且识别响应速度更快，噪音也控制得更好。不同品牌的静电容键盘还有不同压力克数的配置，压力克数越小，手感越轻，例如 HHKB 静电容键盘的压力克数基本都是 45g，而 Realforce 燃风静电容键盘则提供了全局 30g、全局 45g 以及分区压力等不同类型的产品。静电容键盘的手感表现更加偏向于红轴的轻柔，带有一点轻微的段落感，但比茶轴的段落感更细微。
+Because there is no friction of physical contacts, the service life will be longer, and the recognition response speed will be faster, and the noise will be better controlled. Different brands of capacitive keyboards also have different pressure grams. The smaller the pressure grams, the lighter the feel. For example, the pressure grams of HHKB capacitive keyboards are basically 45g, while Realforce Ranfeng capacitive keyboards provide different types of products such as global 30g, global 45g, and partition pressure. The feel of the capacitive keyboard is more inclined to the softness of the red axis, with a slight sense of paragraph, but more subtle than the paragraph of the tea axis.
 
-> 其实我本人对这个键盘的中意程度也很高，但是它的价格并不在我的预算范围之内。所以我不在考虑它。
-
+> In fact, I like this keyboard very much, but its price is not within my budget, so I don't consider it.
 
 ### Customization
 
