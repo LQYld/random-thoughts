@@ -48,7 +48,6 @@ You can choose different manufacturers and different styles for these three sett
 
 I believe that most boys cannot resist the temptation of assembling a keyboard directly by hand, just like the charm brought by Lego.
 
-
 ### Be determined
 
 I struggled for a long time before choosing a customized keyboard. I couldn't get rid of the charm of customization. This was my first time to enter the circle of customized keyboards, and it was also a test of my waters.
