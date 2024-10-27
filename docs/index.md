@@ -3,18 +3,18 @@
     Ethan
   </ruby>
   <ruby>
-    Li
+    &nbsp;Li
   </ruby>
 </h1>
 
 Hey, I am   <ruby>
-    Ethan
+    &nbsp;Ethan
   </ruby>
   <ruby>
-    Li
+    &nbsp;Li
   </ruby>, a Front-end development programmer.
 
-Working at <a><font color="#5086a1">Skylink</font></a>.
+Working at <a><font color="#5086a1">Wuhan BJC Technology Co.,Ltd.</font></a>
 
 Committed to <a><font color="#cb7676">architecture design</font></a>, <a><font color="#cb7676">automation, user experience</font></a>, and <a><font color="#cb7676">AIGC</font></a>.
 
@@ -41,6 +41,6 @@ Or mail me at liqingyunld@gmail.com
     Ethan
   </ruby>
   <ruby>
-    Li
+    &nbsp;Li
   </ruby>
 </p>

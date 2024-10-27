@@ -30,15 +30,15 @@
           <span class="lt-md:hidden cursor-pointer">速查</span>
           <div i-streamline-dictionary-language-book md:hidden cursor-pointer />
         </RouterLink> -->
-        <!-- <RouterLink to="/co-reading" title="共读">
-          <span class="lt-md:hidden cursor-pointer">共读</span>
+        <!-- <RouterLink to="/co-reading" title="analysis">
+          <span class="lt-md:hidden cursor-pointer">Analysis</span>
           <div i-material-symbols-frame-source-sharp md:hidden cursor-pointer />
         </RouterLink> -->
-        <a href="https://github.com/LQYld/random-thoughts/issues" title="issues" target="_blank">
-          <span class="lt-md:hidden cursor-pointer">issues</span>
+        <!-- <a href="https://github.com/LQYld/random-thoughts/issues" title="issues" target="_blank">
+          <span class="lt-md:hidden cursor-pointer">Issues</span>
           <div i-codicon-issues md:hidden cursor-pointer />
-        </a>
-        <a href="https://github.com/LQYld/random-thoughts/" title="github" target="_blank">
+        </a> -->
+        <a href="https://github.com/LQYld/" title="github" target="_blank">
           <div i-uil-github-alt cursor-pointer />
         </a>
         <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">

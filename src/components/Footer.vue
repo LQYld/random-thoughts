@@ -4,7 +4,7 @@
     Ethan
   </ruby>
   <ruby>
-     Li
+     &nbsp;Li
   </ruby></span>
     <div class="flex-auto" />
   </div>
